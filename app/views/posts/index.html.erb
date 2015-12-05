@@ -1,0 +1,15 @@
+<h1 id="page_title">Latest News</h1>
+		
+
+<div id="events_wrapper" class="skinny_wrapper">
+	<% @posts.each do |post| %>
+	<div class="event">
+		<p class="date">Posted On: <%= post.created_at.strftime("%A, %b %d %Y") %></p>
+		<h2><a href="#"><%= link_to post.title, post%></a></h2>
+		<hr>
+	</div>
+	<% end %>
+</div>
+
+<%= will_paginate @posts %>
+

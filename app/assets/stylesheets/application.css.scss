@@ -1,0 +1,168 @@
+@import 'normalize';
+
+$dark: #424652;
+$highlight: #b3c6ff;
+
+* {
+	box-sizing: border-box;
+}
+
+
+#navbar_menus{
+	padding: 3.6em 0 0 1em;
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+
+
+.carousel-caption{
+	background: rgba(0,0,0,0.5);
+
+	p,h1{
+		color: white;	
+	}
+    
+}
+
+body { 
+	padding-top: 140px; 
+	//background-color: #eceff2;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li{
+	color: $dark;
+}
+h1 {
+	font-size: 3rem;
+}
+
+h2{
+	font-size: 2.5rem;
+}
+
+h3{
+	font-size: 2rem;
+}
+
+h4{
+	font-size: 1.375rem;
+}
+h5{
+	font-size: 1.25rem;
+}
+h6{
+	font-size: 1rem;
+}
+
+p, li{
+	font-size: 1.4rem;
+	line-height: 1.75rem;
+}
+
+p, ul, ol{
+	margin: 0 0 1.6rem;
+}
+a{
+	text-decoration: none;
+	color: $dark;
+	&:hover{
+		color: $highlight;
+		text-decoration: none;
+	}
+}
+
+hr{
+		width: 3em;
+		display: block;
+		height: 2px;
+		border: 0;
+		border-top: 2px solid #80b3ff;
+		margin: 2rem 0;
+	}
+
+.skinny_wrapper{
+	width: 80%;
+	max-width: 760px;
+	margin: 0 auto;
+}
+.wrapper_padding{
+	padding: 4rem 0;
+}
+
+.hidden{
+	display: none;
+}
+
+#page_title{
+	text-align: center;
+//	border-top: 1px solid #a5a8a4;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 3em 0;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-top: -3em;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea{
+	width: 100%;
+	max-width: 100%;
+	height: 3em;
+	border: 1px solid #a5a8a4;
+	padding: 1em;
+	margin-left: .5em 0 2em 0;
+}
+
+textarea{
+	min-height: 20em;
+}
+
+input[type="submit"]{
+	outline: none;
+	background: transparent;
+	border: 1px solid #a5a8a4;
+	text-align: center;
+	font-size: 1em;
+	color: $dark;
+	text-decoration: none;
+	padding: 1em 2em;
+
+	&:hover{
+		border: 2px solid $highlight;
+		color: $highlight;
+	}
+}
+
+label{
+	font-weight: 400;
+}
+
+
+#main_footer{
+	padding: 2.5em 5%;
+	border-top:  1px solid #a5a8a4;
+
+	.copyright{
+		float: left;
+		font-size: .9em;
+		margin:0;
+		padding-bottom: 2.5em;
+	}	
+	nav{
+		float: right;
+		i{
+			color: #7f827d;
+			margin-left: 2em;
+
+			&:hover{
+				color: $highlight;
+			}
+		}
+	}
+}
+@import 'welcome';
+@import 'events';
