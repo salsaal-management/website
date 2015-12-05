@@ -53,6 +53,13 @@
 		</div><!-- END OF CONTAINER -->
 	</nav><!-- END OF NAVIGATION BAR -->
 
+	<% if notice %>
+		<p class="notice"><%= notice %></p>
+	<% elsif alert%>
+       <p class="alert"><%= alert %></p>
+    <% end %>
+
+
 	<%= yield %>
 
 	<footer id="main_footer">
