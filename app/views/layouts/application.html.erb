@@ -31,23 +31,24 @@
 			  <div class="collapse navbar-collapse">
 			    <ul class="nav navbar-nav" id="navbar_menus">
 			      <li><%= link_to "Home", root_path%></li>
-			      <li><%= link_to "About Us", abouts_index_path%></li>
+			      <li><%= link_to "About Us", pages_about_path%></li>
+			      <li><%= link_to "Latest News", posts_path %></li>
+
 			      <li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs <b class="caret"></b></a>
 			        <ul class="dropdown-menu">
-			          <li><a href="#">Refugees</a></li>
-			          <li><a href="#">Social &amp; Cultural</a></li>
-			          <li><a href="#">Women's</a></li>
+			          <li><%= link_to "Refugees", programs_refugees_path%></li>
+			          <li><%= link_to "Social & Cultural", programs_social_and_cultural_path%></li>
+			          <li><%= link_to "Women", programs_women_path%></li>
 			        </ul>
 			      </li>
 			      <li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Branches <b class="caret"></b></a>
 			        <ul class="dropdown-menu">
-			          <li><a href="#">Curtin Salsaal Students Association</a></li>
+			          <li><%= link_to "Curtin Salsaal Students Association", student_branches_curtin_salsaal_path%></li>
 			        </ul>
 			      </li>
 				  
-			      <li><%= link_to "Latest News", posts_path %></li>
 			      <li><%= link_to "Contact Us", new_contact_path %></li>
 
 			      <% if user_signed_in? %>
