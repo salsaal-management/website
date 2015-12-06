@@ -13,13 +13,14 @@
 	padding: 0 2.5%;
 }
 
+
 .homepage_content{
 	h2 {
 		font-size: 1.6rem;
 		text-transform: uppercase;
 	}
 	h3{
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		font-weight: 400;
 		margin-bottom: 0.5em;
 	}
@@ -29,6 +30,10 @@
 		margin-bottom: 2em;
 		color: #737373;
 	}
+	.truncated_p{
+		color: $dark;
+	}
+
 	p{
 		margin: 0 0 0.9em 0;
 	}

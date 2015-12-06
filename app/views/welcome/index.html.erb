@@ -42,7 +42,7 @@
 	    </div>
 	  </div>
 	  <!-- Controls -->
-	  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	  <a class="left carousel-control" href="#myCarousel" data-slide="prev" id="left_carousel">
 	    <span class="icon-prev"></span>
 	  </a>
 	  <a class="right carousel-control" href="#myCarousel" data-slide="next">
@@ -58,7 +58,9 @@
 
 
 			<% @posts.each do |post| %>
-				<h3><a href="#"><%= link_to post.title, post %></a></h3>
+				<h3><a href="#"><%= link_to post.title, post, {:style=>'color:#1374a5;'}%></a></h3>
+				<p class="truncated_p"><%=markdown truncate post.content, length: 150%></p>
+				<p class="read_more"><%= link_to "read more ..", post,  {:style=>'color:#1374a5;'}%></a>
 				<p class="date">Posted On: <%= post.created_at.strftime("%A, %b %d %Y") %></p>
 			<% end %>
 

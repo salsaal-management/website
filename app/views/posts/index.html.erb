@@ -5,7 +5,9 @@
 	<% @posts.each do |post| %>
 	<div class="event">
 		<p class="date">Posted On: <%= post.created_at.strftime("%A, %b %d %Y") %></p>
-		<h2><a href="#"><%= link_to post.title, post%></a></h2>
+		<h2><a href="#"><%= link_to post.title, post, {:style=>'color:#1374a5;'}%></a></h2>
+		<p class="truncated_p"><%=markdown truncate post.content, length: 350%></p>
+		<p class="read_more"><%= link_to "read more ..", post,  {:style=>'color:#1374a5;'}%></a>
 		<hr>
 	</div>
 	<% end %>

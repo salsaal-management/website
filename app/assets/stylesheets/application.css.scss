@@ -159,13 +159,18 @@ label{
 	}	
 	nav{
 		float: right;
-		i{
-			color: #7f827d;
+		#icons{
 			margin-left: 2em;
-
+			color: #7f827d;
 			&:hover{
 				color: $highlight;
 			}
+		}
+
+		#mobile{
+			display: inline-block;
+			color: #7f827d;
+			font-size: 1.2em;
 		}
 	}
 }
