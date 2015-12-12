@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'gallery/media'
+
   devise_for :users
   resources :posts
   resources :contacts, only: [:new, :create]
@@ -18,6 +20,8 @@ Rails.application.routes.draw do
   get 'pages/about'
   
   get 'student_branches/curtin_salsaal'
+
+  get 'gallery/media'
 
 
 
