@@ -7,4 +7,18 @@ class ProgramsController < ApplicationController
 
   def women
   end
+
+  def sport_recreational
+  end
+
+  def community_language
+  end
+
+  def english
+  end
+
+  def dari
+    
+  end
+
 end
