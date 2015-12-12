@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   get 'programs/sport_recreational'
   get 'programs/community_language'
   get 'programs/english'
-  get 'programs/dari'
 
   get 'pages/about'
   

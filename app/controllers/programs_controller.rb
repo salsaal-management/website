@@ -16,9 +16,4 @@ class ProgramsController < ApplicationController
 
   def english
   end
-
-  def dari
-    
-  end
-
 end
